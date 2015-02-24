@@ -1,0 +1,8 @@
+--drop table NXY_DAFS_SESSION_LOG;
+create table NXY_DAFS_SESSION_LOG (
+  id                        number(10),
+  session_id                varchar2(200),
+  ip_address                varchar2(200),
+  staff_id                  varchar2(200),
+  eff_date                  date,
+  exp_date                  date);

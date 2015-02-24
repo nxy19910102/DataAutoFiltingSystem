@@ -1,0 +1,9 @@
+--drop table NXY_DAFS_REQUEST_LOG;
+create table NXY_DAFS_REQUEST_LOG (
+  id                        number(10),
+  session_id                varchar2(200),
+  ip_address                varchar2(200),
+  server_path               varchar2(200),
+  staff_id                  varchar2(200),
+  parameters                varchar2(1000),
+  eff_date                  date);
