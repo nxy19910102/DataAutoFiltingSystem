@@ -17,7 +17,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     <div class="main">
     	<h1>错误上传成功</h1>
     	<%request.setCharacterEncoding("utf-8"); %>
-    	<h2><%=request.getParameter("detail") %></h2>
+    	<h2>您的留言是：</h2>
+    	<h3><%=request.getParameter("detail") %></h3>
     	<h2><a href="<%=path %>/index.jsp">返回首页</a></h2>
     </div>
   </body>

@@ -26,7 +26,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 			
  --%>
   <body>
-  	<!--  <img class="main" src="img/face.gif"> -->
+  	<%--  <img class="main" src="img/face.gif"> --%>
     <div class="main">
 		<h1>Data Auto-Filting System</h1>
 	</div>

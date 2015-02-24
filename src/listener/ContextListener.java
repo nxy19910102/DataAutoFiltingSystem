@@ -8,15 +8,15 @@ import javax.servlet.annotation.WebListener;
 
 import util.DBConnect;
 
-@WebListener
+//@WebListener
 public class ContextListener implements ServletContextListener {
 
 	@Override
 	public void contextDestroyed(ServletContextEvent arg0) {
-		try {DBConnect.getConnection().close();
-		} catch (SQLException e) {
-			e.printStackTrace();
-		}
+//		try {DBConnect.getConnection().close();
+//		} catch (SQLException e) {
+//			e.printStackTrace();
+//		}
 	}
 
 	@Override

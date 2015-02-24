@@ -34,9 +34,6 @@ public class ErrorServlet extends HttpServlet {
 
 	public void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		System.out.println(request.getParameter("detail"));
-		request.setCharacterEncoding("utf-8");
-		System.out.println(request.getParameter("detail"));
 
 		HttpSession session = request.getSession();
 		String path = request.getContextPath();
@@ -51,7 +48,6 @@ public class ErrorServlet extends HttpServlet {
 			detail = request.getParameter("detail");
 		}
 		this.addError(staff_id,url,serverPath,detail);
-		System.out.println(detail);
 		request.getRequestDispatcher("../errorPages/errorUploaded.jsp").forward(request, response);
 	}
 
